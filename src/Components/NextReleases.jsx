@@ -4,9 +4,9 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 const NextReleases = () => {
 
-  const [effect, SetEffect] = useState(false);
+  // const [effect, SetEffect] = useState(false);
 
-  useEffect(() => {
+  // useEffect(() => {
     window.addEventListener('scroll', function () {
       function fade(direction) {
         var p = document.querySelectorAll('.fade-' + direction);
@@ -28,14 +28,14 @@ const NextReleases = () => {
       fade('left');
     })
 
-    const activePage = window.location.pathname;
+    // const activePage = window.location.pathname;
   //  console.log(activePage);
-   const navLinks = document.querySelectorAll('nav a').forEach(link =>{
-       if(link.href.includes(`${activePage}`)){
-           link.classList.add('active');
-       }
-   });
-  })
+  //  const navLinks = document.querySelectorAll('nav a').forEach(link =>{
+  //      if(link.href.includes(`${activePage}`)){
+  //          link.classList.add('active');
+  //      }
+  //  });
+  // })
 
 
   
@@ -54,8 +54,8 @@ const NextReleases = () => {
             </div>
 
             <FontAwesomeIcon icon={faPlay} style={{ color: 'red', fontSize: '40px' }} />
-            <a href="https://www.youtube.com/watch?v=pR6pOzwP2Vo" target="_blank"><i
-            ></i>ver trailer</a>
+            <a href="https://www.youtube.com/watch?v=pR6pOzwP2Vo" target="_blank" rel="noreferrer"><i
+            ></i>ver trailer </a>
             {/* <FontAwesomeIcon icon={faPlay} /> */}
             {/* <a>Trailer Not available</a> */}
           </div>
@@ -75,10 +75,10 @@ const NextReleases = () => {
               <p className="fade-up">Release Date: Augost 10, 2022</p>
             </div>
 
-            <a>Trailer not available</a>
+            <p className="pelicula-texto-no-disponible">
+              Trailer Not Available
+            </p>
           </div>
-
-
         </div>
       </div>
 
@@ -88,7 +88,10 @@ const NextReleases = () => {
             <p className="fade-left">"A 30-year-old single lawyer whose greatest desire is to succeed in her profession. But there is a "small" detail: she is related to Bruce Banner (Mark Ruffalo), also known as the Incredible Hulk." </p>
             <div className="texto-estreno">
               <p className="fade-up">Release Date: Augost 17, 2022</p>
-            </div><a>Trailer not available</a>
+            </div>
+            <p className="pelicula-texto-no-disponible">
+              Trailer Not Available
+            </p>
           </div>
         </div>
       </div>

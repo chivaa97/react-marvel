@@ -109,7 +109,7 @@ const Movies = () => {
             make anyone remember it's Spider-Man.
           </p>
           <p className="pelicula-texto-no-disponible">
-            Pelicula NO disponible en Disney Plus
+            Movie not available in Disney Plus
           </p>
         </div>
 

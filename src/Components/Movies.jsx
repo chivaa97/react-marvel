@@ -1,5 +1,4 @@
 import React from "react";
-import CapitanAmerica from "../img/capitanAmerica1.jpg";
 import EndGame from "../img/EG.jpg";
 import IW from "../img/IW.jpg";
 import CA2 from "../img/capitanAmerica2.jpg";

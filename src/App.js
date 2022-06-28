@@ -1,9 +1,9 @@
 import logomarvel from './img/marvel-studios.png';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome,faVideo,faPlayCircle,faUser } from '@fortawesome/free-solid-svg-icons';
+import { faHome,faVideo,faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter, Link, Route, NavLink, Routes } from 'react-router-dom';
-import Nav from './Components/Nav';
+
 import Movies from './Components/Movies';
 import Home from './Components/Home';
 import Series from './Components/Series';
